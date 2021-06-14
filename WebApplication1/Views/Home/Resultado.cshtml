@@ -1,0 +1,60 @@
+﻿@model WebApplication1.Models.Produtos
+
+@{ 
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Listar dados do Produto</h2>
+<fieldset>
+    <legend>Dados do Produto</legend>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Codigo)
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Codigo)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Nome)
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Descricao)
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Descricao)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Peso)
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Peso)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Categoria)
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Categoria)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.ValorUni)
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.ValorUni)
+    </div>
+
+    <p>@Html.ActionLink("Voltar", "Index")</p>
+</fieldset>
